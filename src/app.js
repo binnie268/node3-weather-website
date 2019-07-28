@@ -10,7 +10,7 @@ const forecast = require('./utils/forecast')
 //console.log(path.join(__dirname, '../public'))
 //configure server using various methods
 const app = express();
-
+const port = process.env.PORT || 3000
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public');
 console.log(publicDirectoryPath);
@@ -154,6 +154,6 @@ app.get('*', (req,res) => {
 })
 
 //start server up. Pass to listen method is a callback server when server is up and running.
-app.listen(3000, () => {
-    console.log('Server is up on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
 });
