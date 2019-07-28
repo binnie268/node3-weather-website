@@ -1,5 +1,3 @@
-console.log('Client side javascript file is loaded!')
-
 //fetch is browser base API. Not accessible in node js. Running in client side javascript so use fetch API.
 //async call
 
